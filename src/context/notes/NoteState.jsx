@@ -4,7 +4,7 @@ import NoteContext from "./noteContext";
 const NoteState = (props) => {
   const notesInitial = [
     {
-      _id: "676cfe6421dbd723dd0557e9",
+      _id: "676cfe6421dbd7243443243243dd0557e9",
       user: "6768f3ea0780fbda9dc71644",
       title: "MyTitle",
       description: "MyDescritpion",
@@ -13,7 +13,7 @@ const NoteState = (props) => {
       __v: 0,
     },
     {
-      _id: "676cfe6421dbd723dd0557eb",
+      _id: "676cfe6421d3434542343b343d723dd0557eb",
       user: "6768f3ea0780fbda9dc71644",
       title: "MyTitle",
       description: "MyDescritpion",
@@ -22,7 +22,7 @@ const NoteState = (props) => {
       __v: 0,
     },
     {
-      _id: "676cfe6521dbd723dd0557ed",
+      _id: "676cfe6521dbd724324324334dd0557ed",
       user: "6768f3ea0780fbda9dc71644",
       title: "MyTitle",
       description: "MyDescritpion",
@@ -31,7 +31,7 @@ const NoteState = (props) => {
       __v: 0,
     },
     {
-      _id: "676cfe6521dbd723dd0557ef",
+      _id: "676cfe6521dbd7234234323d3434d0557ef",
       user: "6768f3ea0780fbda9dc71644",
       title: "MyTitle",
       description: "MyDescritpion",
@@ -40,7 +40,7 @@ const NoteState = (props) => {
       __v: 0,
     },
     {
-      _id: "676cfe6521dbd723dd0557f1",
+      _id: "676cfe6521dbd723dd04334324243557f1",
       user: "6768f3ea0780fbda9dc71644",
       title: "MyTitle",
       description: "MyDescritpion",
@@ -49,7 +49,7 @@ const NoteState = (props) => {
       __v: 0,
     },
     {
-      _id: "676cfe6421dbd723dd0557e9",
+      _id: "676cfe6421dbd7234344234234233dd0557e9",
       user: "6768f3ea0780fbda9dc71644",
       title: "MyTitle",
       description: "MyDescritpion",
@@ -58,7 +58,7 @@ const NoteState = (props) => {
       __v: 0,
     },
     {
-      _id: "676cfe6421dbd723dd0557eb",
+      _id: "676cfe6421dbd74343432423323dd0557eb",
       user: "6768f3ea0780fbda9dc71644",
       title: "MyTitle",
       description: "MyDescritpion",
@@ -67,7 +67,7 @@ const NoteState = (props) => {
       __v: 0,
     },
     {
-      _id: "676cfe6521dbd723dd0557ed",
+      _id: "676cfe6521dbd724334324324433dd0557ed",
       user: "6768f3ea0780fbda9dc71644",
       title: "MyTitle",
       description: "MyDescritpion",
@@ -76,7 +76,7 @@ const NoteState = (props) => {
       __v: 0,
     },
     {
-      _id: "676cfe6521dbd723dd0557ef",
+      _id: "676cfe6521dbd72332432423d343d0557ef",
       user: "6768f3ea0780fbda9dc71644",
       title: "MyTitle",
       description: "MyDescritpion",
@@ -85,7 +85,7 @@ const NoteState = (props) => {
       __v: 0,
     },
     {
-      _id: "676cfe6521dbd723dd0557f1",
+      _id: "676cfe6521dbd723423432dd33240557f1",
       user: "6768f3ea0780fbda9dc71644",
       title: "MyTitle",
       description: "MyDescritpion",
