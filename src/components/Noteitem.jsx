@@ -5,7 +5,7 @@ function NoteItem(props) {
   const context = useContext(noteContext);
   const { deleteNote } = context;
 
-  const { note } = props;
+  const { note, updateNote } = props;
   return (
     <div className="col-md-3 my-3">
       <div className="card" style={{ width: "18rem" }}>
@@ -18,7 +18,14 @@ function NoteItem(props) {
                 deleteNote(note._id);
               }}
             ></i>
-            <i className="fa-solid fa-pen-to-square mx-2"></i>
+            <i
+              className="fa-solid fa-pen-to-square mx-2"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+              onClick={() => {
+                updateNote(note);
+              }}
+            ></i>
           </div>
 
           <p className="card-text">{note.description}</p>
