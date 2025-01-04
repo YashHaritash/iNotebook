@@ -129,15 +129,7 @@ const NoteState = (props) => {
     });
     //TODO api call
 
-    const note = {
-      _id: "676cfe6521dbd723423432dd33240557f1",
-      user: "6768f3ea0780fbda9dc71644",
-      title: `${title}`,
-      description: `${description}`,
-      tag: `${tag}`,
-      date: "2024-12-26T06:57:41.381Z",
-      __v: 0,
-    };
+    const note = await response.json();
     setNotes(notes.concat(note));
   };
   // Delete a note
