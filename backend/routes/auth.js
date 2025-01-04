@@ -74,18 +74,23 @@ router.post(
 
     const { email, password } = req.body;
     try {
+      let success = false;
       let user = await User.findOne({ email });
       if (!user) {
-        res
-          .status(400)
-          .json({ error: "Please Try Again with Correct Credentials" });
+        success = false;
+        return res.status(400).json({
+          success,
+          error: "Please Try Again with Correct Credentials",
+        });
       }
 
       const passwordCompare = await bcrypt.compare(password, user.password);
       if (!passwordCompare) {
-        res
-          .status(400)
-          .json({ error: "Please Try Again with Correct Credentials" });
+        success = false;
+        return res.status(400).json({
+          success,
+          error: "Please Try Again with Correct Credentials",
+        });
       }
 
       const data = {
@@ -94,8 +99,8 @@ router.post(
         },
       };
       const authtoken = jwt.sign(data, JWT_SECRET);
-
-      res.json({ authtoken });
+      success = true;
+      res.json({ success, authtoken });
     } catch (error) {
       console.error(error.message);
       res.status(500).send("Internal Server Error ");
