@@ -1,6 +1,7 @@
 import React from "react";
 import { useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
+import LoginOption from "./LoginOption";
 
 function Navbar() {
   let location = useLocation();
@@ -45,14 +46,7 @@ function Navbar() {
               </Link>
             </li>
           </ul>
-          <form className="d-flex" role="search">
-            <Link className="btn btn-primary mx-1" to="/login" role="button">
-              Login
-            </Link>
-            <Link className="btn btn-primary mx-1" to="/signup" role="button">
-              Signup
-            </Link>
-          </form>
+          <LoginOption />
         </div>
       </div>
     </nav>
