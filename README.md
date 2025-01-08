@@ -1,6 +1,4 @@
-Here’s an updated and refined version of your README for the iNotebook project:
 
----
 
 ### README: iNotebook
 
