@@ -1,7 +1,10 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import alertContext from "../context/alert/alertContext";
 
 function Login() {
+  const { showAlert } = useContext(alertContext);
+
   let navigate = useNavigate();
   const [credentials, setCredentials] = useState({
     email: "",
@@ -25,8 +28,9 @@ function Login() {
       //success
       localStorage.setItem("token", json.authtoken);
       navigate("/");
+      showAlert("Login Successful");
     } else {
-      alert("Invalid Credentials");
+      showAlert("Invalid Credentials");
     }
   };
 

@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
+import alertContext from "../context/alert/alertContext";
 
-function Alert(props) {
+function Alert() {
+  const { alert } = useContext(alertContext);
   return (
-    <div className="alert alert-primary" role="alert">
-      {props.message}
-    </div>
+    alert && (
+      <div className="alert alert-primary" role="alert">
+        {alert.message}
+      </div>
+    )
   );
 }
 
